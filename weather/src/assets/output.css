@@ -554,6 +554,13 @@ video {
   --tw-contain-style:  ;
 }
 
+a,.green{
+  text-decoration:none;
+  color:#0032bd;
+  transition:.4s;
+  padding:3px
+}
+
 .m-auto {
   margin: auto;
 }
@@ -833,6 +840,10 @@ video {
     width: 120px;
   }
 
+  .phone\:w-\[180px\] {
+    width: 180px;
+  }
+
   .phone\:w-\[230px\] {
     width: 230px;
   }
@@ -852,5 +863,19 @@ video {
 
   .phone\:text-\[30px\] {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 415px) {
+  .myphone\:w-\[110px\] {
+    width: 110px;
+  }
+
+  .myphone\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .myphone\:font-medium {
+    font-weight: 500;
   }
 }

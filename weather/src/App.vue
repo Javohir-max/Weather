@@ -1,11 +1,14 @@
 <script setup>
+import { ref } from 'vue';
 
+const width = ref(window.outerWidth)
 </script>
 
 <template>
   <header id="header">
     <nav>
-      <RouterLink to="/https://javohir-max.github.io/assets/Weather">Weather</RouterLink>
+      <RouterLink to="/assets/Weather/">Weather</RouterLink>
+      <h2>Width: {{ width }}</h2>
     </nav>
   </header>
   <main>
@@ -38,6 +41,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+nav {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
@@ -54,5 +62,14 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+@media screen and (max-width: 425px) {
+  #header {
+    padding: 1rem 1rem;
+  }
+  #header nav {
+    display: flex;
+    gap: 150px;
+  }
 }
 </style>

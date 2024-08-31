@@ -2,7 +2,7 @@
     <div>
         <h1 class="text-center text-3xl pb-4 font-medium">WeatherTime</h1>
         <div v-if="weather" class="flex flex-wrap gap-4 justify-center">
-            <div class="w-[200px] bg-[#0000ff15] border-0 shadow-[0_0_10px] p-[5px] rounded-[20px] backdrop-blur-[12px]" v-for="(item , index) in weather.list" :key="index">
+            <div class="w-[200px] bg-[#0000ff15] border-0 shadow-[0_0_10px] p-[5px] rounded-[20px] backdrop-blur-[12px] phone:w-[180px]" v-for="(item , index) in weather.list" :key="index">
                 <h3 class="text-center text-black py-4 px-4 text-xl">{{ item.dt_txt.substring(0, item.dt_txt.length - 3) }}</h3>
                 <hr class="bg-black">
                 <h2 class="text-center text-white py-3 text-3xl">{{ Math.round(item.main.temp - 273.15) }}&deg;c</h2>
