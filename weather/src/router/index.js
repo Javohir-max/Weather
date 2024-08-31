@@ -10,10 +10,16 @@ const router = createRouter({
                 import ('../components/Weather.vue')
         },
         {
+            path: '/https://javohir-max.github.io/assets/Weather',
+            name: 'weather',
+            component: () =>
+                import ('../components/Weather.vue')
+        },
+        {
             path: '/weathertime/:id',
             name: 'weathertime',
             component: () =>
-                import ('../views/WeatherTimeView.vue'),
+                import ('../components/WeatherTimeView.vue'),
             props: true
 
         }

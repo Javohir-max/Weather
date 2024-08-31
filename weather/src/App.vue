@@ -5,7 +5,7 @@
 <template>
   <header id="header">
     <nav>
-      <RouterLink to="/">Weather</RouterLink>
+      <RouterLink to="/https://javohir-max.github.io/assets/Weather">Weather</RouterLink>
     </nav>
   </header>
   <main>
@@ -34,7 +34,7 @@ main {
   padding: 12vh 0;
   overflow: hidden;
   overflow-y: auto;
-  background-image: url(assets/weahtder.jpg);
+  background-image: url(assets/weather.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
